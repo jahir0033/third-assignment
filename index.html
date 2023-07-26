@@ -11,9 +11,56 @@
 </head>
 <body class="bg-gray-200">
     <!-- se:1 -->
-    <header>
-        <div class=" w-9/12 mx-auto max-h-32  py-10">
-            <div class="navbar relative  w-50 rounded-full bg-red-400 justify-between text-gray-50">
+    <header> 
+        <section class="  flex flex-col w-9/12 mx-auto max-h-32  py-10">
+            <div class="rounded-full bg-red-400 navbar bg-base-100">
+                <div class="navbar-start lg:hidden ">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="link link-hover">Home</a> 
+                            <li><a class="link link-hover">About Us</a> </li>
+                            <li><a class="link link-hover">Shop</a> </li>
+                            <li> <a class="link link-hover">All Fruits</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+
+               <div class="justify-between  w-full mx-auto max-h-32 mx py-10 aline-item-center">
+                <div class="navbar-center hidden lg:flex justify-items-start">
+                    <ul class="menu menu-horizontal px-1 ">
+                          <li><a class="link link-hover">Home</a> 
+                          <li><a class="link link-hover">About Us</a> </li>
+                          <li><a class="link link-hover">Shop</a> </li>
+                          <li> <a class="link link-hover">All Fruits</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="flex">
+                      <img src="./images/logo.png" alt="">
+                      <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                  </div>
+                 
+                  <div class="flex-none gap-2"> 
+                      <div class="form-control ">
+                        <input type="text" placeholder="Search here"  class="input input-bordered bg-gray-200 w-24 md:w-auto rounded-full" />
+                  </div>
+  
+               </div>
+
+                    </div>
+              </div>
+        </section>
+
+
+
+
+        </div >
+        <!-- <div class="flex flex-col w-9/12 mx-auto max-h-32  py-10">
+            <div class="navbar relative flex flex-col md:flex-row lg:flex-row  w-50 rounded-full bg-red-400 justify-between text-gray-50">
                 <div class="grid grid-flow-col gap-6 px 10">
                     <a class="link link-hover">Home</a> 
                     <a class="link link-hover">About Us</a> 
@@ -28,13 +75,13 @@
         
                 <div class="flex-none gap-2"> 
                   <div class="form-control ">
-                    <input type="text" placeholder="Search here" class="input input-bordered bg-gray-200 w-24 md:w-auto rounded-full" />
-                  </div>
+                    <input type="text" placeholder="Search here"  class="input input-bordered bg-gray-200 w-24 md:w-auto rounded-full" />
+                   </div>
     
                   </div>
                 </div>
               </div>
-        </div>
+        </div> -->
     </header>
     <main >
        
@@ -176,7 +223,7 @@
 
        <!-- card section start -->
 
-        <div  class="flex flex-col md:flex-row lg:flex-rowjustify-center gap-3 py-10 my-10">
+        <div  class="flex flex-col md:flex-row lg:flex-row justify-center gap-3 py-10 my-10">
           <div>
             <div class="card w-65 bg-base-100 shadow-xl bg-gray-200 justify-between">
               <figure class="px-10 pt-10">
@@ -196,6 +243,7 @@
     
                 <div class="card-actions">
                   <button class="btn bg-red-400">Details</button>
+                
                 </div>
   
               </div>
